@@ -13,14 +13,21 @@ class SelectVST extends Component {
     return Object.keys(vsts).map((vst, index) => {
       return (
         <Col xs="6" sm="4" md="2" key={index}>
-          <Card>
-            <CardHeader>
+          <Row>
+            <Col xs="12" sm="12" md="12">
+              <img src={vsts[vst]['path']} style={{"border-radius": "15px"}}/>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs="12" sm="12" md="12">
+              {vsts[vst]['producer']}
+            </Col>
+          </Row>
+          <Row>
+            <Col xs="12" sm="12" md="12">
               {vsts[vst]['product']}
-            </CardHeader>
-            <CardBlock className="card-body">
-              <img src={vsts[vst]['path']} />
-            </CardBlock>
-          </Card>
+            </Col>
+          </Row>
         </Col>
       );
     })
