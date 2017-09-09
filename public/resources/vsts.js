@@ -9,13 +9,13 @@ export const vsts = {
     "GM_DRUM" : {
         "available": true,
         "producer": "Generic",
-        "product": "GMDrum",
+        "product": "GM Drum",
         "path": "../img/vst/other/GM.png"
     },
     "GM_PIANO" : {
         "available": true,
         "producer": "Generic",
-        "product": "MidiPiano",
+        "product": "Midi Piano",
         "path": "../img/vst/other/Piano.png"
     },
     //FXPANSION
@@ -28,19 +28,19 @@ export const vsts = {
     "FXPANSION_BFD2" : {
         "available": false,
         "producer": "FXpansion",
-        "product": "BFD2",
+        "product": "BFD 2",
         "path": ""
     },
     "FXPANSION_BFD3" : {
         "available": false,
         "producer": "FXpansion",
-        "product": "BFD3",
+        "product": "BFD 3",
         "path": ""
     },
     "FXPANSION_BFD_ECO" : {
         "available": false,
         "producer": "FXpansion",
-        "product": "BFDECO",
+        "product": "BFD ECO",
         "path": ""
     },
     /*
@@ -54,377 +54,377 @@ export const vsts = {
     "XLN_ADDICTIVE_DRUMS" : {
         "available": true,
         "producer": "XLNAudio",
-        "product": "AddictiveDrums",
+        "product": "Addictive Drums",
         "path": "../img/vst/other/XlnAudioAddictiveDrums.png"
     },
     "XLN_ADDICTIVE_DRUMS_2" : {
         "available": true,
         "producer": "XLNAudio",
-        "product": "AddictiveDrums2",
+        "product": "Addictive Drums 2",
         "path": "../img/vst/other/XlnAudioAddictiveDrums2.png"
     },
     //TOONTRACKEZX
     "EZX_EZDRUMMER" : {
         "available": true,
         "producer": "Toontrack",
-        "product": "EZXEzDrummer",
+        "product": "EZX EzDrummer",
         "path": "../img/vst/toontrack/ezx/EzDrummer.png"
     },
     "EZX_EZDRUMMER_2_VINTAGE" : {
         "available": true,
         "producer": "Toontrack",
-        "product": "EZXEzDrummer2(Vintage)",
+        "product": "EZX EzDrummer 2 (Vintage)",
         "path": "../img/vst/toontrack/ezx/EzDrummer2.png"
     },
     "EZX_EZDRUMMER_2_MODERN" : {
         "available": true,
         "producer": "Toontrack",
-        "product": "EZXEzDrummer2(Modern)",
+        "product": "EZX EzDrummer 2 (Modern)",
         "path": "../img/vst/toontrack/ezx/EzDrummer2.png"
     },
     "EZX_ALTERNATIVE_ROCK" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "EZXAlternativeRock",
+        "product": "EZX Alternative Rock",
         "path": "../img/vst/toontrack/ezx/AlternativeRock.png"
     },
     "EZX_AMERICANA" : {
         "available": true,
         "producer": "Toontrack",
-        "product": "EZXAmericana",
+        "product": "EZX Americana",
         "path": "../img/vst/toontrack/ezx/Americana.jpg"
     },
     "EZX_BIG_ROCK_DRUMS" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "EZXBigRockDrums",
+        "product": "EZX Big Rock Drums",
         "path": "../img/vst/toontrack/ezx/BigRockDrums.png"
     },
     "EZX_CLAUSTROPHOBIC" : {
         "available": true,
         "producer": "Toontrack",
-        "product": "EZXClaustrophobic",
+        "product": "EZX Claustrophobic",
         "path": "../img/vst/toontrack/ezx/Claustrophobic.jpg"
     },
     "EZX_DREAMPOP" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "EZXDreamPop",
+        "product": "EZX DreamPop",
         "path": "../img/vst/toontrack/ezx/DreamPop.png"
     },
     "EZX_DRUMKIT_FROM_HELL" : {
         "available": true,
         "producer": "Toontrack",
-        "product": "EZXDrumkitFromHell",
+        "product": "EZX Drumkit From Hell",
         "path": "../img/vst/toontrack/ezx/DrumkitFromHell.png"
     },
     "EZX_ELECTRONIC" : {
         "available": true,
         "producer": "Toontrack",
-        "product": "EZXElectronic",
+        "product": "EZX Electronic",
         "path": "../img/vst/toontrack/ezx/Electronic.jpg"
     },
     "EZX_FUNK_MASTERS" : {
         "available": true,
         "producer": "Toontrack",
-        "product": "EZXFunkMasters",
+        "product": "EZX Funk Masters",
         "path": "../img/vst/toontrack/ezx/FunkMasters.jpg"
     },
     "EZX_HIPHOP" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "EZXHipHop",
+        "product": "EZX HipHop",
         "path": "../img/vst/toontrack/ezx/HipHop.jpg"
     },
     "EZX_INDIE_FOLK" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "EZXIndieFolk",
+        "product": "EZX Indie Folk",
         "path": "../img/vst/toontrack/ezx/IndieFolk.jpg"
     },
     "EZX_JAZZ" : {
         "available": true,
         "producer": "Toontrack",
-        "product": "EZXJazz",
+        "product": "EZX Jazz",
         "path": "../img/vst/toontrack/ezx/Jazz.jpg"
     },
     "EZX_LATIN_PERCUSSION" : {
         "available": true,
         "producer": "Toontrack",
-        "product": "EZXLatinPercussion",
+        "product": "EZX Latin Percussion",
         "path": "../img/vst/toontrack/ezx/LatinPercussion.png"
     },
     "EZX_MADE_OF_METAL" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "EZXMadeofMetal",
+        "product": "EZX Made of Metal",
         "path": "../img/vst/toontrack/ezx/MadeOfMetal.jpg"
     },
     "EZX_METAL" : {
         "available": true,
         "producer": "Toontrack",
-        "product": "EZXMetal",
+        "product": "EZX Metal",
         "path": "../img/vst/toontrack/ezx/Metal.jpg"
     },
     "EZX_METAL_HEADS" : {
         "available": true,
         "producer": "Toontrack",
-        "product": "EZXMetalHeads",
+        "product": "EZX Metal Heads",
         "path": "../img/vst/toontrack/ezx/MetalHeads.jpg"
     },
     "EZX_METAL_MACHINE" : {
         "available": true,
         "producer": "Toontrack",
-        "product": "EZXMetalMachine",
+        "product": "EZX Metal Machine",
         "path": "../img/vst/toontrack/ezx/MetalMachine.jpg"
     },
     "EZX_NASHVILLE" : {
         "available": true,
         "producer": "Toontrack",
-        "product": "EZXNashville",
+        "product": "EZX Nashville",
         "path": "../img/vst/toontrack/ezx/Nashville.jpg"
     },
     "EZX_NUMBER_1_HITS" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "EZXNumber1Hits",
+        "product": "EZX Number 1 Hits",
         "path": "../img/vst/toontrack/ezx/Number1Hits.jpg"
     },
     "EZX_POP" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "EZXPop",
+        "product": "EZX Pop",
         "path": "../img/vst/toontrack/ezx/Pop.jpg"
     },
     "EZX_POP_ROCK" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "EZXPopRock",
+        "product": "EZX Pop Rock",
         "path": "../img/vst/toontrack/ezx/PopRock.jpg"
     },
     "EZX_POST_ROCK" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "EZXPostRock",
+        "product": "EZX Post Rock",
         "path": "../img/vst/toontrack/ezx/PostRock.png"
     },
     "EZX_PROGRESSIVE" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "EZXProgressive",
+        "product": "EZX Progressive",
         "path": "../img/vst/toontrack/ezx/Progressive.png"
     },
     "EZX_REGGAE" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "EZXReggae",
+        "product": "EZX Reggae",
         "path": "../img/vst/toontrack/ezx/Reggae.jpg"
     },
     "EZX_ROCK" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "EZXRock",
+        "product": "EZX Rock",
         "path": "../img/vst/toontrack/ezx/Rock.jpg"
     },
     "EZX_ROCK_SOLID" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "EZXRockSolid",
+        "product": "EZX Rock Solid",
         "path": "../img/vst/toontrack/ezx/RockSolid.jpg"
     },
     "EZX_SEVENTIES_ROCK" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "EZXSeventiesRock",
+        "product": "EZX Seventies Rock",
         "path": "../img/vst/toontrack/ezx/SeventiesRock.png"
     },
     "EZX_SOUTHERN_SOUL" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "EZXSouthernSoul",
+        "product": "EZX Southern Soul",
         "path": "../img/vst/toontrack/ezx/SouthernSoul.png"
     },
     "EZX_THE_BLUES" : {
         "available": true,
         "producer": "Toontrack",
-        "product": "EZXTheBlues",
+        "product": "EZX The Blues",
         "path": "../img/vst/toontrack/ezx/TheBlues.jpg"
     },
     "EZX_THE_CLASSIC" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "EZXTheClassic",
+        "product": "EZX The Classic",
         "path": "../img/vst/toontrack/ezx/TheClassic.jpg"
     },
     "EZX_TRADITIONAL_COUNTRY" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "EZXTraditionalCountry",
+        "product": "EZX Traditional Country",
         "path": "../img/vst/toontrack/ezx/TraditionalCountry.png"
     },
     "EZX_TWISTED_KIT" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "EZXTwistedKit",
+        "product": "EZX Twisted Kit",
         "path": "../img/vst/toontrack/ezx/TwistedKit.jpg"
     },
     "EZX_VINTAGE_ROCK" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "EZXVintageRock",
+        "product": "EZX Vintage Rock",
         "path": "../img/vst/toontrack/ezx/VintageRock.jpg"
     },
     //TOONTRACKSUPERIOR
     "SUPERIOR_CUSTOM_VINTAGE" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "Sup.CustomVintage",
+        "product": "Sup. Custom Vintage",
         "path": "../img/vst/toontrack/superior/CustomVintage.jpg"
     },
     "SUPERIOR_INDIEPENDENT" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "Sup.IndiePendent",
+        "product": "Sup. IndiePendent",
         "path": "../img/vst/toontrack/superior/IndiePendent.png"
     },
     "SUPERIOR_METAL_MACHINERY" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "Sup.MetalMachinery",
+        "product": "Sup. Metal Machinery",
         "path": "../img/vst/toontrack/superior/MetalMachinery.jpg"
     },
     "SUPERIOR_MUSIC_CITY_USA" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "Sup.MusicCityUSA",
+        "product": "Sup. Music City USA",
         "path": "../img/vst/toontrack/superior/MusicCityUSA.jpg"
     },
     "SUPERIOR_NEW_YORK_STUDIOS_VOL2" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "Sup.NewYorkStudiosV2",
+        "product": "Sup. New York Studios V2",
         "path": "../img/vst/toontrack/superior/NewYorkStudiosVol2.jpg"
     },
     "SUPERIOR_NEW_YORK_STUDIOS_VOL3" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "Sup.NewYorkStudiosV3",
+        "product": "Sup. New York Studios V3",
         "path": "../img/vst/toontrack/superior/NewYorkStudiosVol3.jpg"
     },
     "SUPERIOR_ROOTS" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "Sup.Roots(Brushes,Rods&Mallets)",
+        "product": "Sup. Roots (Brushes, Rods & Mallets)",
         "path": "../img/vst/toontrack/superior/Roots.jpg"
     },
     "SUPERIOR_ROOTS_STICKS" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "Sup.Roots(Sticks)",
+        "product": "Sup. Roots (Sticks)",
         "path": "../img/vst/toontrack/superior/RootsSticks.jpg"
     },
     "SUPERIOR_THE_METAL_FOUNDRY" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "Sup.TheMetalFoundry",
+        "product": "Sup. The Metal Foundry",
         "path": "../img/vst/toontrack/superior/TheMetalFoundry.jpg"
     },
     "SUPERIOR_THE_PROGRESSIVE_FOUNDRY" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "Sup.TheProgressiveFoundry",
+        "product": "Sup. The Progressive Foundry",
         "path": "../img/vst/toontrack/superior/TheProgressiveFoundry.png"
     },
     "SUPERIOR_THE_ROCK_WAREHOUSE" : {
         "available": false,
         "producer": "Toontrack",
-        "product": "Sup.TheRockWarehouse",
+        "product": "Sup. The Rock Warehouse",
         "path": "../img/vst/toontrack/superior/TheRockWarehouse.jpg"
     },
     //NATIVEINSTRUMENTSABBEYROAD
     "NI_ABBEY_ROAD_50S_AUTUMN" : {
         "available": true,
         "producer": "NativeInstruments",
-        "product": "AbbeyRoad50s(Autumn)",
+        "product": "Abbey Road 50s (Autumn)",
         "path": "../img/vst/ni/NiAbbeyRoad50s.png"
     },
     "NI_ABBEY_ROAD_50S_AUTUMN_BRUSHES" : {
         "available": true,
         "producer": "NativeInstruments",
-        "product": "AbbeyRoad50s(AutumnBrushes)",
+        "product": "Abbey Road 50s (Autumn Brushes)",
         "path": "../img/vst/ni/NiAbbeyRoad50s.png"
     },
     "NI_ABBEY_ROAD_50S_SPRING" : {
         "available": true,
         "producer": "NativeInstruments",
-        "product": "AbbeyRoad50s(Spring)",
+        "product": "Abbey Road 50s (Spring)",
         "path": "../img/vst/ni/NiAbbeyRoad50s.png"
     },
     "NI_ABBEY_ROAD_50S_SPRING_BRUSHES" : {
         "available": true,
         "producer": "NativeInstruments",
-        "product": "AbbeyRoad50s(SpringBrushes)",
+        "product": "Abbey Road 50s (Spring Brushes)",
         "path": "../img/vst/ni/NiAbbeyRoad50s.png"
     },
     "NI_ABBEY_ROAD_60S_EARLY" : {
         "available": true,
         "producer": "NativeInstruments",
-        "product": "AbbeyRoad60s(Early)",
+        "product": "Abbey Road 60s (Early)",
         "path": "../img/vst/ni/NiAbbeyRoad60s.png"
     },
     "NI_ABBEY_ROAD_60S_LATE" : {
         "available": true,
         "producer": "NativeInstruments",
-        "product": "AbbeyRoad60s(Late)",
+        "product": "Abbey Road 60s (Late)",
         "path": "../img/vst/ni/NiAbbeyRoad60s.png"
     },
 
     "NI_ABBEY_ROAD_70S_OPEN" : {
         "available": false,
         "producer": "NativeInstruments",
-        "product": "AbbeyRoad70s(Open)",
+        "product": "Abbey Road 70s (Open)",
         "path": "../img/vst/ni/NiAbbeyRoad70s.png"
     },
     "NI_ABBEY_ROAD_70S_TIGHT" : {
         "available": false,
         "producer": "NativeInstruments",
-        "product": "AbbeyRoad70s(Tight)",
+        "product": "Abbey Road 70s (Tight)",
         "path": "../img/vst/ni/NiAbbeyRoad70s.png"
     },
     "NI_ABBEY_ROAD_80S_BLACK" : {
         "available": false,
         "producer": "NativeInstruments",
-        "product": "AbbeyRoad80s(Black)",
+        "product": "Abbey Road 80s (Black)",
         "path": "../img/vst/ni/NiAbbeyRoad80s.png"
     },
     "NI_ABBEY_ROAD_80S_CHROME" : {
         "available": false,
         "producer": "NativeInstruments",
-        "product": "AbbeyRoad80s(Chrome)",
+        "product": "Abbey Road 80s (Chrome)",
         "path": "../img/vst/ni/NiAbbeyRoad80s.png"
     },
     "NI_ABBEY_ROAD_MODERN_SPARKLE" : {
         "available": false,
         "producer": "NativeInstruments",
-        "product": "AbbeyRoadModern(Sparkle)",
+        "product": "Abbey Road Modern (Sparkle)",
         "path": "../img/vst/ni/NiAbbeyRoadModern.png"
     },
     "NI_ABBEY_ROAD_MODERN_WHITE" : {
         "available": false,
         "producer": "NativeInstruments",
-        "product": "AbbeyRoadModern(White)",
+        "product": "Abbey Road Modern (White)",
         "path": "../img/vst/ni/NiAbbeyRoadModern.png"
     },
     "NI_ABBEY_ROAD_VINTAGE_EBONY" : {
         "available": false,
         "producer": "NativeInstruments",
-        "product": "AbbeyRoadVintage(Ebony)",
+        "product": "Abbey Road Vintage (Ebony)",
         "path": "../img/vst/ni/NiAbbeyRoadVintage.png"
     },
     "NI_ABBEY_ROAD_VINTAGE_IVORY" : {
         "available": false,
         "producer": "NativeInstruments",
-        "product": "AbbeyRoadVintage(Ivory)",
+        "product": "Abbey Road Vintage (Ivory)",
         "path": "../img/vst/ni/NiAbbeyRoadVintage.png"
     }
 }

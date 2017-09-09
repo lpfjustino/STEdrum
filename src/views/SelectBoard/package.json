@@ -1,0 +1,6 @@
+{
+  "name": "SelectBoard",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SelectBoard.js"
+}

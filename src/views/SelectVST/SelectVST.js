@@ -2,11 +2,26 @@ import React, { Component } from 'react';
 import {Row, Col, Card, CardHeader, CardBlock} from 'reactstrap';
 import {vsts} from '../../../public/resources/vsts';
 
+import {axiosInstance as axios} from '../../modules';
+import {API_ENDPOINT as api} from '../../modules';
+
 class SelectVST extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      vsts: []
+    };
     this.getCards = this.getCards.bind(this);
-    console.log(Object.keys(vsts));
+  }
+  
+  componentWillMount() {
+    let endpoint = `${api}vst`;
+    axios.get(endpoint)
+      .then(res => console.log(res));
+  }
+
+  getVsts() {
+
   }
 
   getCards() {
@@ -15,7 +30,7 @@ class SelectVST extends Component {
         <Col xs="6" sm="4" md="2" key={index}>
           <Row>
             <Col xs="12" sm="12" md="12">
-              <img src={vsts[vst]['path']} style={{"border-radius": "15px"}}/>
+              <img src={vsts[vst]['path']} style={{"borderRadius": "15px"}}/>
             </Col>
           </Row>
           <Row>
