@@ -1,36 +1,41 @@
 import React, { Component } from 'react';
 import {Row, Col, Card, CardHeader, CardBlock} from 'reactstrap';
-import {vsts} from '../../../public/resources/vsts';
+
+import {axiosInstance as axios} from '../../modules';
+import {API_ENDPOINT as api} from '../../modules';
 
 class SelectPad extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      selectedPad: "",
+      numPads: props.history.location.state.selectedBoard.numPads,
+    };
     this.getCards = this.getCards.bind(this);
-    console.log(Object.keys(vsts));
+  }
+  
+  componentWillMount() {
+    this.getPads();
+  }
+  
+  getPads() {
+  }
+
+  onPadSelected(pad) {
   }
 
   getCards() {
-    return Object.keys(vsts).map((vst, index) => {
-      return (
-        <Col xs="6" sm="4" md="2" key={index}>
-          <Row>
-            <Col xs="12" sm="12" md="12">
-              <img src={vsts[vst]['path']} style={{"border-radius": "15px"}}/>
-            </Col>
-          </Row>
-          <Row>
-            <Col xs="12" sm="12" md="12">
-              {vsts[vst]['producer']}
-            </Col>
-          </Row>
-          <Row>
-            <Col xs="12" sm="12" md="12">
-              {vsts[vst]['product']}
-            </Col>
-          </Row>
-        </Col>
-      );
-    })
+    const cards = [];
+
+    for (var pad = 0; pad < this.state.numPads; pad++) {
+        cards.push(
+          <Col xs="6" sm="4" md="2" key={pad}>
+            {"Pad " + pad+1}
+          </Col>
+        );
+    }
+
+    return cards;
   }
 
   render() {

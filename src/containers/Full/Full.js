@@ -11,6 +11,8 @@ import Charts from '../../views/Charts/';
 import Widgets from '../../views/Widgets/';
 
 import SelectVST from '../../views/SelectVST/';
+import SelectPad from '../../views/SelectPad/';
+import SelectBoard from '../../views/SelectBoard/';
 
 // Components
 import Buttons from '../../views/Components/Buttons/';
@@ -51,6 +53,8 @@ class Full extends Component {
                 <Route path="/widgets" name="Widgets" component={Widgets}/>
                 <Route path="/charts" name="Charts" component={Charts}/>
                 <Route path="/select-vst" name="SelectVST" component={SelectVST}/>
+                <Route path="/select-board" name="SelectBoard" component={SelectBoard}/>
+                <Route path="/select-pad" name="SelectPad" component={SelectPad}/>
                 <Redirect from="/" to="/dashboard"/>
               </Switch>
             </Container>

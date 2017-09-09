@@ -139,5 +139,15 @@ export default {
       url: '/select-vst',
       icon: 'icon-grid',
     },
+    {
+      name: 'SelectBoard',
+      url: '/select-board',
+      icon: 'icon-grid',
+    },
+    {
+      name: 'SelectPad',
+      url: '/select-pad',
+      icon: 'icon-grid',
+    },
   ]
 };
