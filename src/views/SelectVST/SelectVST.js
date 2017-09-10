@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {Row, Col, Card, CardHeader, CardBlock} from 'reactstrap';
 
-import {axiosInstance as axios} from '../../modules';
-import {API_ENDPOINT as api} from '../../modules';
+import {axiosInstance as axios} from '../../modules/actions';
+import {API_ENDPOINT as api} from '../../modules/actions';
 
 class SelectVST extends Component {
   constructor(props) {
