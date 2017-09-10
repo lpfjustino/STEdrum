@@ -1,5 +1,6 @@
 import {createStore, applyMiddleware, compose} from 'redux';
-import {routerMiddleware} from 'react-router-redux';
+//import {routerMiddleware} from 'react-router-redux';
+import {connectRouter, routerMiddleware} from 'connected-react-router'
 import thunk from 'redux-thunk';
 import createHistory from 'history/createBrowserHistory';
 import {
@@ -7,7 +8,7 @@ import {
     setLocale,
     syncTranslationWithStore
 } from 'react-redux-i18n';
-import {persistStore, autoRehydrate} from 'redux-persist';
+import {persistStore, autoRehydrate, AsyncStorage} from 'redux-persist';
 import localforage from 'localforage';
 import logger from 'redux-logger';
 import translations from '../translations';
@@ -30,10 +31,10 @@ const enhancer = compose(
   persistState(),
 );
 
-const store = createStore(reducers, enhancer);
+const store = createStore(connectRouter(history)(reducers), {}, enhancer);
 
 persistStore(store, {
-    "storage": [localforage]
+    "storage": [AsyncStorage]
 });
 
 syncTranslationWithStore(store);
