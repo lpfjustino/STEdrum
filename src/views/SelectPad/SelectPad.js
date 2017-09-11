@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Row, Col, Card, CardHeader, CardBlock} from 'reactstrap';
+import PieceTypeModal from '../components/PieceTypeModal';
 
 import {axiosInstance as axios} from '../../modules/actions';
 import {API_ENDPOINT as api} from '../../modules/actions';
@@ -10,17 +11,20 @@ import {bindActionCreators} from 'redux';
 class SelectPad extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      modal: false,
+    };
     this.getCards = this.getCards.bind(this);
+    this.toggle = this.toggle.bind(this);
   }
   
-  componentWillMount() {
-    this.getPads();
-  }
-  
-  getPads() {
+  onPadSelected(pad) {
   }
 
-  onPadSelected(pad) {
+  toggle() {
+    this.setState({
+      modal: !this.state.modal
+    });
   }
 
   getCards() {
@@ -28,7 +32,7 @@ class SelectPad extends Component {
 
     for (var pad = 0; pad < this.props.board.selected.numPads; pad++) {
         cards.push(
-          <Col xs="6" sm="4" md="3"  key={pad}>
+          <Col xs="6" sm="4" md="2" key={pad} onClick={this.toggle}>
             <Card>
               <CardHeader> {"Pad"} </CardHeader>
               <CardBlock> {(pad+1)} </CardBlock>
@@ -43,6 +47,7 @@ class SelectPad extends Component {
   render() {
     return (
       <div className="animated fade-in">
+        <PieceTypeModal isOpen={this.state.modal} toggle={this.toggle} />
         <Row>
           {this.getCards()}
         </Row>
