@@ -28,8 +28,11 @@ class SelectPad extends Component {
 
     for (var pad = 0; pad < this.props.board.selected.numPads; pad++) {
         cards.push(
-          <Col xs="6" sm="4" md="2" key={pad}>
-            {"Pad " + (pad+1)}
+          <Col xs="6" sm="4" md="3"  key={pad}>
+            <Card>
+              <CardHeader> {"Pad"} </CardHeader>
+              <CardBlock> {(pad+1)} </CardBlock>
+            </Card>
           </Col>
         );
     }
