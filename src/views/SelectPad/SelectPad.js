@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import {Row, Col, Card, CardHeader, CardBlock} from 'reactstrap';
 import PieceTypeModal from '../components/PieceTypeModal';
 
-import {axiosInstance as axios} from '../../modules/actions';
-import {API_ENDPOINT as api} from '../../modules/actions';
-
 import {connect, dispatch} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
@@ -12,7 +9,7 @@ class SelectPad extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      modal: false,
+      modal: true,
     };
     this.getCards = this.getCards.bind(this);
     this.toggle = this.toggle.bind(this);
@@ -63,6 +60,12 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = (dispatch) => {
   return {
+    getBoardList: () => dispatch(getBoardList()),
+    getBoardListSuccess: (response) =>
+    dispatch(getBoardListSuccess(response)),
+    getBoardListFailure: () =>
+    dispatch(getBoardListFailure()),
+    boardSelected: (board) => dispatch(boardSelected(board)),
   };
 };
 

@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import {Row, Col, Card, CardHeader, CardBlock} from 'reactstrap';
 
-import {axiosInstance as axios} from '../../modules/actions';
-import {API_ENDPOINT as api} from '../../modules/actions';
-
 import {connect, dispatch} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
@@ -59,7 +56,7 @@ class SelectVST extends Component {
           </Row>
         </Col>
       );
-    })
+    });
   }
 
   render() {

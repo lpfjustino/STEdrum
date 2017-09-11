@@ -1,8 +1,101 @@
 import React, {Component} from "react";
 import {Row, Col, Button, Modal, ModalHeader, ModalBody, ModalFooter, Card, CardHeader, CardBlock} from "reactstrap";
+import {connect, dispatch} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import {
+  getPieceTypeList,
+  getPieceTypeListSuccess,
+  getPieceTypeListFailure,
+  pieceTypeSelected,
+} from '../../../modules/actions/pieceType';
 
+const PieceTypeCards = ({pieceTypes, pieceTypeSelected}) => {
+  return(
+    <Row>
+      {
+        pieceTypes.items.map((pieceType, index) =>
+            <Col xs="6" sm="4" md="3" key={index} onClick={() => pieceTypeSelected(pieceType)}>
+              <Row>
+                <Col xs="12" sm="12" md="12">
+                  <img src={pieceType.path} style={{"borderRadius": "15px"}}/>
+                </Col>
+              </Row>
+              <Row>
+                <Col xs="12" sm="12" md="12">
+                  {pieceType.name}
+                </Col>
+              </Row>
+              <Row>
+                <Col xs="12" sm="12" md="12">
+                  {pieceType.type}
+                </Col>
+              </Row> 
+            </Col>
+          )
+      }
+    </Row>
+  );
+};
+
+const MapPieces = ({pieces, selectedPieceType, associate}) => {
+  return(
+    <Row>
+      {
+        pieces
+          .filter(piece => piece.type === selectedPieceType.name)
+          .map((piece, index) =>
+            <Col xs="6" sm="4" md="6" key={index} onClick={() => {}}>
+              <Row>
+                <Col xs="10" sm="10" md="10">
+                  {piece.name}
+                </Col>
+                <Col xs="2" sm="2" md="2">
+                  {piece.midiNote}
+                </Col>
+                <Col xs="12" sm="12" md="12">
+                  {piece.type}
+                </Col>
+              </Row>
+            </Col>
+          )
+      }
+    </Row>
+  );
+};
 
 class PieceTypeModal extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      "pieceTypeSelected": false
+    }
+    this.getContent = this.getContent.bind(this);
+    this.pieceTypeSelected = this.pieceTypeSelected.bind(this);
+  }
+
+  getContent() {
+    return this.state.pieceTypeSelected
+      ? <MapPieces
+      pieces={this.props.vst.selected.drumMap.pieces}
+      selectedPieceType={this.props.pieceType.selected} />
+      : <PieceTypeCards
+      pieceTypes={this.props.pieceType}
+      pieceTypeSelected={this.pieceTypeSelected}/>;
+  }
+
+  componentWillMount() {
+    this.getPieceTypes();
+  }
+  
+  getPieceTypes() {
+    this.props.getPieceTypeList()
+      .then(res => this.props.getPieceTypeListSuccess(res.data));
+  }
+
+  pieceTypeSelected(pieceType) {
+    this.props.pieceTypeSelected(pieceType);
+    this.setState({"pieceTypeSelected": true})
+  }
 
   render() {
     return (
@@ -10,11 +103,7 @@ class PieceTypeModal extends Component {
         <Modal isOpen={this.props.isOpen} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
           <ModalBody>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+          {this.getContent()}
           </ModalBody>
           <ModalFooter>
             <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
@@ -26,4 +115,23 @@ class PieceTypeModal extends Component {
   }
 }
 
-export default PieceTypeModal;
+const mapStateToProps = state => ({
+  pieceType: state.pieceType,
+  vst: state.vst
+});
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    getPieceTypeList: () => dispatch(getPieceTypeList()),
+    getPieceTypeListSuccess: (response) =>
+    dispatch(getPieceTypeListSuccess(response)),
+    getPieceTypeListFailure: () =>
+    dispatch(getPieceTypeListFailure()),
+    pieceTypeSelected: (pieceType) => dispatch(pieceTypeSelected(pieceType)),
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(PieceTypeModal);
