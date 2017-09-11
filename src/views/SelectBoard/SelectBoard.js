@@ -14,7 +14,7 @@ import {
   boardSelected,
 } from '../../modules/actions/board';
 
-class SelectBOARD extends Component {
+class SelectBoard extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -35,7 +35,7 @@ class SelectBOARD extends Component {
 
   boardSelected(board) {
     this.props.boardSelected(board);
-    this.props.history.push('/select-board');
+    this.props.history.push('/select-pad');
   }
 
   getCards() {
@@ -91,4 +91,4 @@ const mapDispatchToProps = (dispatch) => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(SelectBOARD);
+)(SelectBoard);
